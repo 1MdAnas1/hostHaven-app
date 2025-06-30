@@ -1,0 +1,58 @@
+@import "./variables.scss";
+@import "./breakpoints.scss";
+
+.category-list1 {
+  padding: 50px 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  // background-color: #f8395a1c;
+  background-color: black;
+  border-radius: 0px 0px 20px 20px;
+  // border:3px solid grey;
+
+  @include sm {
+    padding: 50px 20px;
+  }
+
+  .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $darkgrey;
+    cursor: pointer;
+    
+
+    &_icon {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    &:hover {
+      color: $pinkred;
+    }
+  }
+
+  .selected {
+    color: $pinkred;
+  }
+}
+
+.listings {
+  padding: 0 60px 70px;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  background-color: $lightpink;
+
+  @include lg {
+    padding: 0 20px 120px;
+  }
+}

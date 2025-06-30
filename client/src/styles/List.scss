@@ -1,0 +1,65 @@
+@import "./breakpoints.scss";
+@import "./variables.scss";
+
+.mydivcat{
+  height: 100vh;
+}
+
+.title-list {
+  margin: 40px 100px;
+  // padding-left: 30px;
+  // padding-top: 30px;
+  color: $blue;
+  // text-decoration: underline;
+  // background-color: $lightpink;
+
+  @include sm {
+    // margin: 40px 50px;
+  }
+}
+
+.title_list_search{
+  margin: 40px 100px;
+  margin-left: 20px;
+  color: $blue;
+  text-decoration: underline;
+  // background-color: $lightpink;
+
+  @include sm {
+    margin: 40px 50px;
+  }
+}
+.divtitle{
+  background-color: $lightpink;
+}
+
+.list {
+  // padding: 0 100px 120px;
+  // padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  // background-color: $lightpink;
+  @include xl {
+    padding: 0 20px 120px;
+  }
+}
+
+.myLIST{
+  padding-top: 30px;
+  padding-bottom:30px; 
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 95vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flex-wrappercat {
+  display: flex;
+  min-height: 70vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
